@@ -44,7 +44,7 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <title>Home Page</title>
       <h1 style={headingStyles}>
-        Kim Rabideau
+        Kimmy Rabideau
         <br />
         <span style={headingAccentStyles}>Front-End Web Developer</span>
       </h1>
