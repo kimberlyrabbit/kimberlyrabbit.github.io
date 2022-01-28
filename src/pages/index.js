@@ -1,10 +1,17 @@
 import * as React from "react"
+import { Link } from "gatsby"
 
 // styles
 const pageStyles = {
   color: "#232129",
   padding: 96,
   fontFamily: "Poppins, sans-serif",
+}
+const noStyles = {
+  paddingTop: "666px",
+}
+const noLinkStyles = {
+  color: "#fff",
 }
 const headingStyles = {
   marginTop: 0,
@@ -60,8 +67,10 @@ const IndexPage = () => {
       >
         {email.url}
       </a>
+      <div style={noStyles}>
+        <Link to="/no/" style={noLinkStyles}>No</Link>
+      </div>
     </main>
-
   )
 }
 
