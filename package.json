@@ -7,6 +7,7 @@
   "keywords": [
     "gatsby"
   ],
+  "homepage": "https://kimberlyrabbit.github.io",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
