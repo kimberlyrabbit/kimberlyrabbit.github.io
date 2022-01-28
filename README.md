@@ -1,54 +1,77 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+import * as React from "react"
+import { Link } from "gatsby"
 
-## 🚀 Quick start
+// styles
+const pageStyles = {
+  color: "#232129",
+  padding: 96,
+  fontFamily: "Poppins, sans-serif",
+}
+const noStyles = {
+  paddingTop: "666px",
+}
+const noLinkStyles = {
+  color: "#fff",
+}
+const headingStyles = {
+  marginTop: 0,
+  marginBottom: 64,
+}
+const headingAccentStyles = {
+  color: "#FFA07A",
+}
+const paragraphStyles = {
+  marginBottom: 64,
+}
+const codeStyles = {
+  color: "#8A6534",
+  padding: 4,
+  backgroundColor: "#FFF4DB",
+  fontSize: "1.25rem",
+  borderRadius: 4,
+}
 
-1.  **Create a Gatsby site.**
+const linkStyle = {
+  color: "#FFA07A",
+  fontWeight: "bold",
+  fontSize: 16,
+  verticalAlign: "5%",
+  textDecoration: "none",
+  borderBottom: "2px solid #FFA07A",
+}
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+// data
+const email = {
+  url: "karabideau@gmail.com",
+}
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+// markup
+const IndexPage = () => {
+  return (
+    <main style={pageStyles}>
+      <title>Home Page</title>
+      <h1 style={headingStyles}>
+        Kimmy Rabideau
+        <br />
+        <span style={headingAccentStyles}>Front-End Web Developer</span>
+      </h1>
+      <p style={paragraphStyles}>
+        She <code style={codeStyles}>writes code</code> and stuff.{" "}
+        <span role="img" aria-label="Sunglasses smiley emoji">
+          😎
+        </span>
+      </p>
+      <a
+        style={linkStyle}
+        href={`mailto:${email.url}`}
+      >
+        {email.url}
+      </a>
+      <div style={noStyles}>
+        <Link to="/no/" style={noLinkStyles}>No</Link>
+      </div>
+    </main>
+  )
+}
 
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+export default IndexPage
