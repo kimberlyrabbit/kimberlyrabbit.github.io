@@ -3,7 +3,6 @@ module.exports = {
     siteUrl: "https://www.kimr.work",
     title: "kimberlyrabbit",
   },
-  pathPrefix: "/kimberlyrabbit",
   plugins: [
     "gatsby-plugin-image",
     {
