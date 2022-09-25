@@ -51,12 +51,12 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <title>Home Page</title>
       <h1 style={headingStyles}>
-        Kimmy Rabideau
+        heading
         <br />
-        <span style={headingAccentStyles}>Front-End Web Developer</span>
+        <span style={headingAccentStyles}>a heading</span>
       </h1>
       <p style={paragraphStyles}>
-        She <code style={codeStyles}>writes code</code> and stuff.{" "}
+        Words <code style={codeStyles}>writes </code> words{" "}
         <span role="img" aria-label="Sunglasses smiley emoji">
           😎
         </span>
