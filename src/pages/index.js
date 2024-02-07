@@ -3,41 +3,42 @@ import { Link } from "gatsby"
 
 // styles
 const pageStyles = {
-  color: "#232129",
   padding: 96,
-  fontFamily: "Poppins, sans-serif",
+  fontFamily: "serif",
 }
 const noStyles = {
   paddingTop: "666px",
 }
 const noLinkStyles = {
-  color: "#fff",
+  color: "#000",
 }
 const headingStyles = {
-  marginTop: 0,
+  marginTop: 64,
   marginBottom: 64,
+  color: "#BC8F8F",
 }
 const headingAccentStyles = {
-  color: "#FFA07A",
+  color: "#ee82ee",
+  fontSize: "1rem",
 }
 const paragraphStyles = {
   marginBottom: 64,
 }
 const codeStyles = {
   color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
+  padding: 64,
+  backgroundColor: "#D8BFD8",
   fontSize: "1.25rem",
   borderRadius: 4,
 }
 
 const linkStyle = {
-  color: "#FFA07A",
+  color: "#7FFFD4",
   fontWeight: "bold",
   fontSize: 16,
   verticalAlign: "5%",
   textDecoration: "none",
-  borderBottom: "2px solid #FFA07A",
+  borderBottom: "2px solid #7FFFD4",
 }
 
 // data
@@ -49,17 +50,14 @@ const email = {
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Home Page</title>
+      <title>There Is No Home</title>
       <h1 style={headingStyles}>
-        heading
+        Hi!!
         <br />
-        <span style={headingAccentStyles}>a heading</span>
+        <span style={headingAccentStyles}>So happy to have you.</span>
       </h1>
       <p style={paragraphStyles}>
-        Words <code style={codeStyles}>writes </code> words{" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
+        <code style={codeStyles}>This is the website of a girl raised on the internet.</code>{" "}
       </p>
       <a
         style={linkStyle}
