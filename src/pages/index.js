@@ -60,7 +60,7 @@ const linkStyle = {
 
 // data
 const email = {
-  url: "karabideau@gmail.com",
+  url: "kimberlyxrabbit@gmail.com",
 }
 
 // markup
