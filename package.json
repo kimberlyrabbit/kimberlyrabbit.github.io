@@ -16,16 +16,17 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b main"
   },
   "dependencies": {
-    "gatsby": "^5.12.12",
-    "gatsby-plugin-google-analytics": "^5.12.0",
-    "gatsby-plugin-image": "^3.12.3",
-    "gatsby-plugin-manifest": "^5.12.3",
-    "gatsby-plugin-sharp": "^5.12.3",
-    "gatsby-plugin-sitemap": "^6.12.3",
-    "gatsby-source-filesystem": "^5.12.1",
-    "gatsby-transformer-sharp": "^5.12.3",
+    "gatsby": "^5.13.1",
+    "gatsby-plugin-google-analytics": "^5.13.0",
+    "gatsby-plugin-image": "^3.13.0",
+    "gatsby-plugin-manifest": "^5.13.0",
+    "gatsby-plugin-sharp": "^5.13.0",
+    "gatsby-plugin-sitemap": "^6.13.0",
+    "gatsby-source-filesystem": "^5.13.0",
+    "gatsby-transformer-sharp": "^5.13.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "reactjs-popup": "^2.0.6"
   },
   "devDependencies": {
     "gh-pages": "^6.1.0"
