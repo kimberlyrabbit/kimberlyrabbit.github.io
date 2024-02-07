@@ -1,6 +1,17 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
+var $rosybrown = "#BC8F8F";
+var $violet = "#ee82ee";
+var $thistle = "#D8BFD8";
+var $peachpuff = "#FFDAB9";
+var $aquamarine = "#7FFFD4";
+var $firebrick = "#b22222";
+var $colorMain = $rosybrown;
+var $colorSecondary = $violet;
+var $colorLink = $aquamarine;
+var $colorRed = $firebrick;
+
 // styles
 const pageStyles = {
   padding: 96,
@@ -9,36 +20,42 @@ const pageStyles = {
 const noStyles = {
   paddingTop: "666px",
 }
+const aboutStyles = {
+  color: $colorSecondary,
+  float: 0,
+  fontWeight: "bold",
+  textTransform: "uppercase",
+}
 const noLinkStyles = {
-  color: "#000",
+  color: $colorRed,
 }
 const headingStyles = {
   marginTop: 64,
   marginBottom: 64,
-  color: "#BC8F8F",
+  color: $colorMain,
 }
 const headingAccentStyles = {
-  color: "#ee82ee",
+  color: $colorSecondary,
   fontSize: "1rem",
 }
 const paragraphStyles = {
   marginBottom: 64,
 }
 const codeStyles = {
-  color: "#8A6534",
+  color: $peachpuff,
   padding: 64,
-  backgroundColor: "#D8BFD8",
+  backgroundColor: $thistle,
   fontSize: "1.25rem",
   borderRadius: 4,
 }
 
 const linkStyle = {
-  color: "#7FFFD4",
+  color: $colorLink,
   fontWeight: "bold",
   fontSize: 16,
   verticalAlign: "5%",
   textDecoration: "none",
-  borderBottom: "2px solid #7FFFD4",
+  borderBottom: "3px solid " + $colorLink,
 }
 
 // data
@@ -65,6 +82,9 @@ const IndexPage = () => {
       >
         {email.url}
       </a>
+      <div style={aboutStyles}>
+        <Link to="/about/" style={noLinkStyles}>About</Link>
+      </div>
       <div style={noStyles}>
         <Link to="/no/" style={noLinkStyles}>No</Link>
       </div>
