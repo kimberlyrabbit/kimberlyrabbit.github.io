@@ -1,5 +1,7 @@
 // Step 1: Import React
 import * as React from 'react'
+import { Link } from "gatsby"
+import Popup from 'reactjs-popup';
 
 // Step 2: Define your component
 const imageStyles = {

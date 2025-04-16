@@ -1,3 +1,7 @@
+
+import * as React from "react"
+import { Link } from "gatsby"
+
 var $rosybrown = "#BC8F8F";
 var $violet = "#ee82ee";
 var $thistle = "#D8BFD8";
